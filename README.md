@@ -66,8 +66,8 @@ The `gapminder_results_visualization.R` file contains code to reproduce numerica
 The codes use the packages `GrassmannOptim` and `ldr` that can't be downloaded directly from CRAN (only previous versions are available there). Before running any codes in this folder, install these packages from sources as
 
 ```{r}
-install.packages("package/GrassmannOptim_2.0.1.tar.gz", type = "sources", repos = NULL)
-install.packages("package/ldr_1.3.tar.gz", type = "sources", repos = NULL)
+install.packages("packages/GrassmannOptim_2.0.1.tar.gz", type = "sources", repos = NULL)
+install.packages("packages/ldr_1.3.tar.gz", type = "sources", repos = NULL)
 ```
 
 
