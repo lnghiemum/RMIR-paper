@@ -46,6 +46,13 @@ The R file `Simulation_dselection.R` corresponds to the simulation described in 
     
 ## simulation results
 
+The simulation results folder contain all raw results, as described previously. Additionally it contains the code to reproduce the numbers in the tables. 
+
+- Running `RPFC/RPFC-unstrSigma/analyze_results_unstructuredRE.R` reproduces results in Table 1 in the main paper.
+- Running `RPFC-isotropicSigma/analyze_results_isotropic.R` reproduces results in Table S1 in the Supplementary Materials.
+- Running `RMIR/analyze_results.R` reproduces results in Table 2 in the main paper.
+- Running `selection-of-d/analyse_results_choice_of_d.R` reproduces Figure S1 in the Supplementary Materials.
+
 ## data application
 
 The **data** folder contains the raw dataset used by the analysis, which is downloaded from [Gapminder public repository](https://www.gapminder.org/data/).
