@@ -16,10 +16,6 @@ The R function `RMIR_MCEM_update_allcontinuous+qbinary.R` implements the MCEM al
 
 For the time-invariant binary predictor, a global  Ising model is implemented in the file `global_Ising_with_covariates. R`, which contains a call to `globalIsing.cpp`. 
 
-
-
-
-
 ## simulation code
 
 
@@ -28,6 +24,13 @@ For the time-invariant binary predictor, a global  Ising model is implemented in
 ## simulation results
 
 ## data application
+
+The **data** folder contains the raw dataset used by the analysis, which is downloaded from [Gapminder public repository](https://www.gapminder.org/data/).
+
+The `gapminder_datawrangler+fit.R` file contains codes to process raw data, fit the model, and save the results to the `gapminder_applications_withbinarycovariates.Rdata` object. 
+
+The `gapminder_results_visualization.R` file contains code to reproduce numerical values reported in Section 7 and Figure 2 of the paper and Figures S2 and S3 in the appendix. These figures are also included in the folder. 
+
 
 
 
