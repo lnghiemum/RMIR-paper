@@ -2,6 +2,8 @@ Code to reproduce simulation results, figures, and real data analysis results fr
 
 # Organization
 
+It is important to open and run the code in the R project (RMIR.Rproj), since all the paths included in the files are relative to the project folder.
+
 ## RMIR
 
 This folder contains an implementation of the RPFC and RMIR methods as described in Section 3 and Section 6 of the paper. 
