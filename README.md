@@ -61,6 +61,17 @@ The `gapminder_datawrangler+fit.R` file contains codes to process raw data, fit 
 
 The `gapminder_results_visualization.R` file contains code to reproduce numerical values reported in Section 7 and Figure 2 of the paper and Figures S2 and S3 in the appendix. These figures are also included in the folder. 
 
+## packages
+
+The codes use the packages `GrassmannOptim` and `ldr` that can't be downloaded directly from CRAN (only previous versions are available there). Before running any codes in this folder, install these packages from sources as
+
+```{r}
+install.packages("package/GrassmannOptim_2.0.1.tar.gz", type = "sources", repos = NULL)
+install.packages("package/ldr_1.3.tar.gz", type = "sources", repos = NULL)
+```
+
+
+
 
 
 
