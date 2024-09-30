@@ -38,7 +38,7 @@ The R file `Simulation_allcontinuous+qbinarytimeinvariant_Ising.R` corresponds t
 The R file `Simulation_allcontinuous+qbinarytimeinvariant_GLMM.R` corresponds to the simulation described in section 6.3 of the main paper with time-varying binary covariates.
   - Running this file with `id_artemis = 1-180` gives the results in the folder /simulation_results/RMIR/timevariant
 
-### Choice of d** folder
+### Choice of d folder
 
 The R file `Simulation_dselection.R` corresponds to the simulation described in the Supplementary S4 for selecting the number of dimensions.
   - Running this file with `id_artemis = 1-180` gives the results in the folder /simulation_results/selection-of-d/results
