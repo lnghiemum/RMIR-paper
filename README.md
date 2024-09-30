@@ -18,6 +18,11 @@ For the time-invariant binary predictor, a global  Ising model is implemented in
 
 ## simulation code
 
+This folder contains simulation code throughout the paper and Supplementary Material.
+
+- **RPFC** folder: The R file `SimulationRPFC_Section5_p=7_unstructuredSigma.R` corresponds to the simulation described in Section 5 of the main paper where the covariance matrix $\mathbf{\Sigma}$ is fitted in an unstructured manner.
+  - In this R file,    
+ 
 
 
 
