@@ -6,7 +6,8 @@ Settings <- expand.grid(n = c(100, 500, 750, 1000),
                          Sigmatype = 1:3)
 
 
-dir.files <- gtools::mixedsort(list.files("./results_choice_d_selection/", full.names = T))
+dir.files <- gtools::mixedsort(
+  list.files("simulation-results/selection-of-d/results/", full.names = T))
 numCases <- 24
 
 dresults_overall <- sapply(1:numCases, function(ii){
@@ -56,7 +57,7 @@ plot_choice_d <- dresults_df %>%
   guides(colour = guide_legend(title = bquote(tilde(Sigma))))
 
 ggsave(plot_choice_d, 
-       file = "FigureS1.pdf", width = 12, height = 8)
+       file = "simulation-results/selection-of-d/FigureS1.pdf", width = 12, height = 8)
 
 
 

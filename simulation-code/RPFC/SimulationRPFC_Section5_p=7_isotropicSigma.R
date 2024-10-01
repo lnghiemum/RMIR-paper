@@ -171,14 +171,10 @@ sim_iso_sigma <- function(n = 300, p = 4, d = 2,
   
   set.seed(NULL)
   
-  return(list(Gamma0 = Gamma0, Gamma = Gamma, 
-              estMeanSpace = allestMeanSubspace,
-              estMeanSpaceError = allestMeanSubspaceError,
+  return(list(estMeanSpaceError = allestMeanSubspaceError,
               estsigma2Error = estsigma2Error,
               estSigmaError = estSigmaError,
-              estGammaError = estGammaError,
-              MSEGamma = MSEGamma, 
-              estGamma = estGamma))
+              estGammaError = estGammaError))
 }  
 
 

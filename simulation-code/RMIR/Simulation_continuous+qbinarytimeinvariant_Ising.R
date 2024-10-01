@@ -270,10 +270,7 @@ sim1 <- function(n, d = 1, p = 7, q = 4,
   })
   result$MSPE <- c(RMIR = mean(RMIR_MSPE), SMIR = mean(SMIR_MSPE))
   return(list(
-    result = result,
-    #RMIRfit = RMIRfit,
-    dat = dat
-  ))
+    result = result))
 }
 
 Settings <- expand.grid(n = c(100, 500, 1000),

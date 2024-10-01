@@ -221,7 +221,7 @@ sim1 <- function(n, SigmaTilde,
     norm(projection(sep_fit[[ii]][[2]]) - projection(trueThetai[[ii]]), "F") 
   })
   result$MSPE <- c(RMIR = mean(RMIR_MSPE), SMIR = mean(SMIR_MSPE))
-  return(list(result = result, RMIRfit = RMIRfit, dat = dat))
+  return(list(result = result))
 }
                                                                       
 Settings <- expand.grid(n = c(100, 500, 1000),
