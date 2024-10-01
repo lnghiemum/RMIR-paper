@@ -25,12 +25,12 @@ This folder contains simulation code throughout the paper and Supplementary Mate
 ### RPFC folder
 
 The R file `SimulationRPFC_Section5_p=7_unstructuredSigma.R` corresponds to the simulation described in Section 5 of the main paper where the covariance matrix $\mathbf{\Sigma}$ is fitted in an unstructured manner.
-  - Running this code with `id_artemis = 1-180` gives the results in the folder /simulation_results/RPFC_unstrSigma/smalln/
-  - Commenting the lines xxx-xxx and running the lines xxx-xxx with `id_artemis = 1-180`  gives the results in the folder /simulation_results/RPFC_unstrSigma/smalln/
+  - Running this code with `id_artemis = 1-120` gives the results in the folder /simulation_results/RPFC_unstrSigma/smalln/
+  - Commenting the lines 181-206 and running the lines 211-233 with `id_artemis = 1-120`  gives the results in the folder /simulation_results/RPFC_unstrSigma/bign/
 
 The R file `SimulationRPFC_Section5_p=7_isotropicSigma.R` corresponds to the simulation described in Section 5 of the main paper where the true covariance matrix $\mathbf{\Sigma}$ is isotropic and is assumed to be known to have that structure
-  - Running this code with `id_artemis = 1-180` gives the results in the folder /simulation_results/RPFC_isotropicSigma/smalln/
-  - Commenting the lines xxx-xxx and running the lines xxx-xxx with `id_artemis = 1-180`  gives the results in the folder /simulation_results/RPFC_isotropicSigma/bign/
+  - Running this code with `id_artemis = 1-120` gives the results in the folder /simulation_results/RPFC_isotropicSigma/smalln/
+  - Commenting the lines 188-215 and running the lines 221-247 with `id_artemis = 1-120`  gives the results in the folder /simulation_results/RPFC_isotropicSigma/bign/
 
 ### RMIR folder
 
