@@ -1,0 +1,15 @@
+load("/Users/linhnghiem/Dropbox/Ongoing Research/RPFC/Submission code/simulation-results/RPFC-selection-of-d/results_choice_d_selection/choice_of_d_index04.Rdata")
+ls
+ls()
+Sim_onesigma[[1]]Sim_onesigma[[1]]$saic
+Sim_onesigma[[1]]$saic
+load("/Users/linhnghiem/Dropbox/Ongoing Research/RPFC/Submission code/simulation-results/RPFC-selection-of-d/results_choice_d_selection/choice_of_d_index05.Rdata")
+Sim_onesigma[[1]]$saic
+Sim_onesigma[[1]]Sim_onesigma[[1]]$LKH
+Sim_onesigma[[1]]$LKH
+Sim_onesigma[[1]]$numpar
+load("/Users/linhnghiem/Dropbox/Ongoing Research/RPFC/Simulations/results_choice_d_final/choice_of_d_index04.Rdata")
+Sim_onesigma[[1]]$LKH
+length(Sim_onesigma)
+Sim_onesigma[[2]]$LKH
+Sim_onesigma[[2]]$aic
