@@ -1,0 +1,3 @@
+load("/Users/linhnghiem/Dropbox/Ongoing Research/RPFC/Submission code/data-application/gapminder_applications_withbinarycovariates.Rdata")
+names(data_application)
+data_application$RPFC_pred_ranef
