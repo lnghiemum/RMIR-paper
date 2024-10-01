@@ -63,6 +63,11 @@ The `gapminder_datawrangler+fit.R` file contains codes to process raw data, fit 
 
 The `gapminder_results_visualization.R` file contains code to reproduce numerical values reported in Section 7 and Figure 2 of the paper and Figures S2 and S3 in the appendix. These figures are also included in the folder. 
 
+## Figure 1
+
+This folder contains code to generate Figure 1 in the main paper. Four files (`Sphere1.png`, `Sphere2.png`, `TangentSpace1.png`, `TangentSpace2.png`) are generated from running `plots_sphere_tangent.R`. Then all these files are placed together using Google Slides and save it to `SphereTangentSpace.pdf`.
+
+
 ## packages
 
 The codes use the packages `GrassmannOptim` and `ldr` that can't be downloaded directly from CRAN (only previous versions are available there). Before running any codes in this folder, install these packages from sources as
@@ -71,7 +76,6 @@ The codes use the packages `GrassmannOptim` and `ldr` that can't be downloaded d
 install.packages("packages/GrassmannOptim_2.0.1.tar.gz", type = "sources", repos = NULL)
 install.packages("packages/ldr_1.3.tar.gz", type = "sources", repos = NULL)
 ```
-
 
 
 
