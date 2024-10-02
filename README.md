@@ -1,19 +1,12 @@
----
-editor_options: 
-  markdown: 
-    wrap: sentence
----
-
-Code to reproduce simulation results, figures, and real data analysis results from the paper "Random effects model-based sufficient dimension reduction for independent clustered data" by [Linh Nghiem](https://linhnghiem.org/) and [Francis K.C.Hui](https://francishui.netlify.app/). The paper has been accepted for publication in the *Journal of the American Statistical Association*.
+Code to reproduce simulation results, figures, and real data analysis results from the paper "Random effects model-based sufficient dimension reduction for independent clustered data" by [Linh Nghiem](https://linhnghiem.org/) and [Francis K. C. Hui](https://francishui.netlify.app/). The paper has been accepted for publication in the *Journal of the American Statistical Association*.
 
 # Organization
 
-It is important to open and run the code in the R project (`RMIR.Rproj`), since all the paths included in the files are relative to the project folder.
+It is important to open and run the code in the R project `RMIR.Rproj`, since all the paths included in the files are relative to the project folder.
 
 ## RMIR
 
 This folder contains an implementation of the RPFC and RMIR methods as described in Section 3 and Section 6 of the paper.
--
 
 1.  The `ancillary_functions.R` file contains functions that compute a projection matrix associated with a matrix, generate samples from a singular matrix normal distribution, and perform exponential map and inverse exponential map on a Grassmann manifold.
 2.  The `IntrinsicMeanGrassMan.R` file contains functions to perform geodesic and compute Frechet mean on a Grassmann manifold.
@@ -81,3 +74,4 @@ Before running any codes in this project, install these packages from sources as
 install.packages("packages/GrassmannOptim_2.0.1.tar.gz", type = "sources", repos = NULL)
 install.packages("packages/ldr_1.3.tar.gz", type = "sources", repos = NULL)
 ```
+
