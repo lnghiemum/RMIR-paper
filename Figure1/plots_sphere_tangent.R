@@ -41,27 +41,6 @@ theta <- dat %*% K
 # Exponential mapping points to the sphere
 Gamma <- apply(theta, 1, expmap, Gamma0 = Gamma0, simplify = TRUE)
 
-### Visualization
-open3d()
-shapelist3d(octahedron3d(), x = theta[, 1], y = theta[, 2], z = theta[, 3]+1, color = "green", size = 0.03)
-planes3d(a = 0, b = 0, c = 1, d = -1, color = "lightgray", alpha = 0.2)
-
-rgl.spheres(x = 0, y=0, z = 0, radius = 1, phi = 90, color = "lightblue")
-points3d(0, 0, 1, col = "red", size = 15)
-rgl.spheres(x = Gamma[1,], y = Gamma[2,], z = Gamma[3, ], r = 0.03, color = "darkgreen")
-close3d()
-
-#### Computation to include Frechet variance
-#### Create Points on the tangent plane
-set.seed(20)
-### Generating a big sample size
-n <- 10^6
-V <- Rfast::rmvnorm(n, rep(0, 3), 0.3*diag(3), seed = 1000)
-theta <- V %*% K
-# Exponential mapping points to the sphere
-Gamma <- apply(theta, 1, expmap, Gamma0 = Gamma0, simplify = FALSE)
-case1frechetVar <- frechetVar(Gamma)
-
 
 # Separate two pictures separately
 open3d()
@@ -78,10 +57,28 @@ rgl.spheres(x = 0, y=0, z = 0, radius = 1, phi = 90, color = "lightblue")
 points3d(0, 0, 1, col = "red", size = 15)
 rgl.spheres(x = Gamma[1,], y = Gamma[2,], z = Gamma[3, ], r = 0.03, color = "darkgreen")
 um <- par3d()$userMatrix
+
+
 view3d(userMatrix = um)
+# Interactively change the view of the figure to make the red circle at the center
 snapshot3d("Sphere1.png", webshot = FALSE, 
            width = 500, height = 500)
 close3d()
+
+
+
+#### Computation to include Frechet variance
+#### Create Points on the tangent plane
+set.seed(20)
+### Generating a big sample size
+n <- 10^6
+V <- Rfast::rmvnorm(n, rep(0, 3), 0.3*diag(3), seed = 1000)
+theta <- V %*% K
+# Exponential mapping points to the sphere
+Gamma <- apply(theta, 1, expmap, Gamma0 = Gamma0, simplify = FALSE)
+case1frechetVar <- frechetVar(Gamma)
+
+
 
 ### Second situation when the matrix Sigma is non-diagonal
 ###
@@ -109,7 +106,7 @@ points3d(0, 0, 1, col = "red", size = 15)
 rgl.spheres(x = Gamma[1,], y = Gamma[2,], z = Gamma[3, ], r = 0.03, color = "darkgreen")
 
 um <- par3d()$userMatrix
-
+# Interactively change the view of the figure to make the red circle at the center
 view3d(userMatrix = um)
 snapshot3d("Sphere2.png", webshot = FALSE, 
            width = 500, height = 500)

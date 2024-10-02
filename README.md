@@ -65,7 +65,7 @@ The `gapminder_results_visualization.R` file contains code to reproduce numerica
 
 ## Figure 1
 
-This folder contains code to generate Figure 1 in the main paper. Four files (`Sphere1.png`, `Sphere2.png`, `TangentSpace1.png`, `TangentSpace2.png`) are generated from running `plots_sphere_tangent.R`. Then all these files are placed together using Google Slides and save it to `SphereTangentSpace.pdf`.
+This folder contains code to generate Figure 1 in the main paper. Four files (`Sphere1.png`, `Sphere2.png`, `TangentSpace1.png`, `TangentSpace2.png`) are generated from running `plots_sphere_tangent.R`. Then all these files are placed together using Google Slides and save it to `DifferentialGeometry2.pdf`.
 
 
 ## packages
